@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_mobile_first_wrapper/mobile_web_view.dart';
 import 'package:flutter_sevendays_ui/routes.dart';
-import 'package:responsive_framework/responsive_wrapper.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
@@ -16,22 +16,16 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: 'Material App',
-      //PUT INSIDE MATERIAL APP
-      //IMPORT responsive_framework
-      builder: (context, _) => ResponsiveWrapper.builder(_,
-          maxWidth: 480,
-          defaultScale: true,
-          breakpoints: [
-            const ResponsiveBreakpoint.resize(480, name: MOBILE),
-            const ResponsiveBreakpoint.autoScale(800, name: TABLET),
-            const ResponsiveBreakpoint.resize(1000, name: DESKTOP),
-          ],
-          background: Container(color: const Color(0xFFF5F5F5))),
-      initialRoute: "/",
-      routes: routes,
+    return MobileWebView(
+      backgroundColor: Colors.greenAccent,
+      child: MaterialApp(
+        debugShowCheckedModeBanner: false,
+        title: 'Material App',
+        //PUT INSIDE MATERIAL APP
+        //IMPORT responsive_framewor
+        initialRoute: "/",
+        routes: routes,
+      ),
     );
   }
 }
