@@ -1,0 +1,15 @@
+export 'first_get_started.dart';
+export 'first_login.dart';
+export 'first_splash.dart';
+export 'second_get_started.dart';
+export 'second_login.dart';
+export 'second_splash.dart';
+export 'first_empty.dart';
+export 'second_empty.dart';
+export 'first_rating.dart';
+export 'second_rating.dart';
+export 'first_pricing.dart';
+export 'second_pricing.dart';
+export 'first_checkout.dart';
+export 'second_checkout.dart';
+export 'home.dart';

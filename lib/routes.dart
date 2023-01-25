@@ -1,0 +1,70 @@
+import 'pages/pages.dart';
+
+var titles = [
+  'Splash Screen 1',
+  'Splash Screen 2',
+  'Get Started 1',
+  'Get Started 2',
+  'Login Screen 1',
+  'Login Screen 2',
+  'Empty Screen 1',
+  'Empty Screen 2',
+  'Rating Screen 1',
+  'Rating Screen 2',
+  'Pricing Screen 1',
+  'Pricing Screen 2',
+  'Checkout Screen 1',
+  'Checkout Screen 2',
+];
+
+var routeNames = [
+  '/first-splash',
+  '/second-splash',
+  '/first-get-started',
+  '/second-get-started',
+  '/first-login',
+  '/second-login',
+  '/first-empty-screen',
+  '/second-empty-screen',
+  '/first-rating',
+  '/second-rating',
+  '/first-pricing',
+  '/second-pricing',
+  '/first-checkout',
+  '/second-checkout',
+];
+
+var imagrURIs = [
+  'assets/splash1.png',
+  'assets/splash2.png',
+  'assets/get-started1.png',
+  'assets/get-started2.png',
+  'assets/sign_in1.png',
+  'assets/sign_in2.png',
+  'assets/empty_state1.png',
+  'assets/empty_state2.png',
+  'assets/rating1.png',
+  'assets/rating2.png',
+  'assets/pricing1.png',
+  'assets/pricing2.png',
+  'assets/checkout1.png',
+  'assets/checkout2.png',
+];
+
+var routes = {
+  "/": (_) => const HomePage(),
+  '/first-splash': (_) => const FirstSplash(),
+  '/second-splash': (_) => const SecondSplash(),
+  '/first-get-started': (_) => const FirstGetStarted(),
+  '/second-get-started': (_) => const SecondGetStarted(),
+  '/first-login': (_) => const FirstLogin(),
+  '/second-login': (_) => const SecondLogin(),
+  '/first-empty-screen': (_) => const FirstEmptyScreen(),
+  '/second-empty-screen': (_) => const SecondEmptyScreen(),
+  '/first-rating': (_) => const FirstRating(),
+  '/second-rating': (_) => const SecondRating(),
+  '/first-pricing': (_) => const FirstPricing(),
+  '/second-pricing': (_) => const SecondPricing(),
+  '/first-checkout': (_) => const FirstCheckout(),
+  '/second-checkout': (_) => const SecondCheckout(),
+};

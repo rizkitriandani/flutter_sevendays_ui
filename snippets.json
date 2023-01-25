@@ -1,0 +1,338 @@
+[
+  {
+    "created": "2021-11-04T18:25:14.713Z",
+    "name": "roundedimg",
+    "tags": ["flutter"],
+    "content": " ClipRRect(\n                  borderRadius: BorderRadius.circular(15),\n                    child: Image(\n                      image: AssetImage(),\n                      height: 150,\n                      width: 150,\n                      fit: BoxFit.cover,\n                    ),\n                  ),",
+    "contentType": "dart"
+  },
+  {
+    "created": "2021-11-15T08:34:27.938Z",
+    "name": "circledTextbutton",
+    "tags": ["flutter"],
+    "content": " TextButton(\n                    onPressed: () {},\n                    style: TextButton.styleFrom(\n                        backgroundColor: Colors.blue,\n                        shape: RoundedRectangleBorder(\n                            borderRadius: BorderRadius.circular(17))),\n                    child: Text(\n                      \"Get Started\",\n                      style:whiteTextStyle.copyWith(\n                          fontSize: 18,\n                          fontWeight:medium\n                        ),\n                    ),\n                  ),",
+    "contentType": "dart"
+  },
+  {
+    "created": "2021-11-22T07:57:07.535Z",
+    "name": "roundedTextbutton",
+    "tags": ["flutter"],
+    "content": " Container(\n                width: 220,\n                height: 55,\n                margin: const EdgeInsets.only(top: 50, bottom: 80),\n                child: TextButton(\n                  onPressed: () {},\n                  style: TextButton.styleFrom(\n                      backgroundColor: Colors.blue,\n                      shape: RoundedRectangleBorder(\n                          borderRadius: BorderRadius.circular(10))),\n                  child: Text(\n                    \"Get Started\",\n                  ),\n                ),\n              ),",
+    "contentType": "dart"
+  },
+  {
+    "created": "2022-04-03T09:15:18.296Z",
+    "name": "circledImg",
+    "tags": ["dart"],
+    "content": " ClipRRect(\r\n                  borderRadius: BorderRadius.circular(60),\r\n                    child: const Image(\r\n                      image: AssetImage('assets/home.png'),\r\n                      height: 150,\r\n                      width: 150,\r\n                      fit: BoxFit.cover,\r\n                    ),\r\n                  ),",
+    "contentType": "dart"
+  },
+  {
+    "created": "2022-04-04T11:26:25.139Z",
+    "name": "fullbackgroundimage",
+    "tags": ["dart"],
+    "content": "  Container(\r\n            constraints: const BoxConstraints.expand(),\r\n            decoration: const BoxDecoration(\r\n                image: DecorationImage(\r\n                    image: AssetImage(''),\r\n                    fit: BoxFit.cover)),\r\n          ),",
+    "contentType": "dart"
+  },
+  {
+    "created": "2022-04-04T12:28:38.704Z",
+    "name": "scaffoldwithcontainerbackground",
+    "tags": ["dart"],
+    "content": " return Container(\r\n    constraints: const BoxConstraints.expand(),\r\n    decoration: const BoxDecoration(\r\n        image: DecorationImage(\r\n            image: AssetImage(\"assets/background.png\"), fit: BoxFit.cover)),\r\n    child: const Scaffold(\r\n      backgroundColor: Colors.transparent,\r\n      body: SafeArea(\r\n        child: Text('Halo')\r\n      ),\r\n    ),\r\n  );",
+    "contentType": "dart"
+  },
+  {
+    "created": "2022-04-07T06:40:39.485Z",
+    "name": "deletefile",
+    "tags": ["golang"],
+    "content": "e := os.Remove(path)\r\n    if e != nil {\r\n        log.Fatal(e)\r\n    }",
+    "contentType": "go"
+  },
+  {
+    "created": "2022-04-22T08:42:51.224Z",
+    "name": "python_tornado_rest_api_template",
+    "tags": ["python", "tornado"],
+    "content": "from tornado.web import Application, RequestHandler\r\nfrom tornado.ioloop import IOLoop\r\n\r\nclass PingHandler(RequestHandler):\r\n  def get(self):\r\n    self.write({'message': 'PING'})\r\n\r\ndef make_app():\r\n  urls = [(\"/ping\", PingHandler)]\r\n  return Application(urls,debug=True)\r\n  \r\nif __name__ == '__main__':\r\n    app = make_app()\r\n    app.listen(3000)\r\n    IOLoop.instance().start()",
+    "contentType": "python"
+  },
+  {
+    "created": "2022-04-23T23:52:30.100Z",
+    "name": "RichText",
+    "tags": ["dart"],
+    "content": "RichText(\r\n                text: TextSpan(\r\n                    text: 'Don\\'t have an account?',\r\n                    style: const TextStyle(color: Colors.black, fontSize: 18),\r\n                    children: <TextSpan>[\r\n                      TextSpan(\r\n                          text: ' Sign up',\r\n                          style: const TextStyle(\r\n                              color: Colors.blueAccent, fontSize: 18),\r\n                          recognizer: TapGestureRecognizer()\r\n                            ..onTap = () {\r\n                              // navigate to desired screen\r\n                            })\r\n                    ]),\r\n              ),",
+    "contentType": "dart"
+  },
+  {
+    "created": "2022-04-24T00:29:27.958Z",
+    "name": "RoundedTextFormField",
+    "tags": ["dart"],
+    "content": " TextFormField(\r\n              style: GoogleFonts.openSans(color: Colors.white, fontSize: 15.sp),\r\n              decoration: InputDecoration(\r\n                  fillColor: const Color(0xff262A34),\r\n                  filled: true,\r\n                  border: OutlineInputBorder(\r\n                    borderRadius: BorderRadius.circular(3.w),\r\n                    borderSide: BorderSide.none,\r\n                  ),\r\n                  hintText: 'Email',\r\n                  hintStyle:\r\n                      GoogleFonts.openSans(color: const Color(0xff6F7075))),\r\n            ),",
+    "contentType": "dart"
+  },
+  {
+    "created": "2022-04-24T00:30:16.904Z",
+    "name": "RoundedTextFormFieldWithSufixIcon",
+    "tags": ["dart"],
+    "content": " TextFormField(\r\n              style: GoogleFonts.openSans(color: Colors.white, fontSize: 15.sp),\r\n              decoration: InputDecoration(\r\n                  fillColor: const Color(0xff262A34),\r\n                  filled: true,\r\n                  border: OutlineInputBorder(\r\n                    borderRadius: BorderRadius.circular(3.w),\r\n                    borderSide: BorderSide.none,\r\n                  ),\r\n                  hintText: 'Password',\r\n                  hintStyle:\r\n                      GoogleFonts.openSans(color: const Color(0xff6F7075)),\r\n                  suffixIcon: const Icon(\r\n                    Icons.visibility,\r\n                    color: Color(0xff6F7075),\r\n                  )),\r\n            ),",
+    "contentType": "dart"
+  },
+  {
+    "created": "2022-05-15T09:40:04.337Z",
+    "name": "contohGetListData",
+    "tags": ["dart"],
+    "content": "Future<List<Object>> getAllData() async {\n    //logger.d(\"FETCHING data\");\n    Uri url = Uri.parse(\"https://api.quran.sutanlab.id/surah\");\n    var result = await http.get(url);\n    List? data = (json.decode(result.body) as Map<String, dynamic>)[\"data\"];\n\n    if (data == null || data.isEmpty) {\n      return [];\n    } else {\n      return data.map((e) => Surah.fromJson(e)).toList();\n    }\n  }",
+    "contentType": "dart"
+  },
+  {
+    "created": "2022-05-27T14:25:15.016Z",
+    "name": "roundedcontainergradient",
+    "tags": ["dart"],
+    "content": "Container(\n              width:double.infinity,\n              height:112,\n              decoration: const BoxDecoration(\n              borderRadius: BorderRadius.all(Radius.circular(20)),\n                  gradient: LinearGradient(\n                      begin: Alignment.centerLeft,\n                      end: Alignment.centerRight,\n                      colors: [Colors.orange,colors.red])),\n            ),",
+    "contentType": "dart"
+  },
+  {
+    "created": "2022-06-01T10:36:39.160Z",
+    "name": "roundedrectContainerWithInkWellRippleEffect",
+    "tags": ["dart"],
+    "content": "        Container(\r\n              decoration: const BoxDecoration(\r\n                  borderRadius: BorderRadius.all(Radius.circular(20)),\r\n                  gradient: LinearGradient(\r\n                      begin: Alignment.centerLeft,\r\n                      end: Alignment.centerRight,\r\n                      colors: [Colors.purple, Colors.orange])),\r\n              child: Material(\r\n                color: Colors.transparent,\r\n                borderRadius: BorderRadius.circular(20),\r\n                child: InkWell(\r\n                  onTap: () => print(\"On Tap\"),\r\n                  borderRadius: BorderRadius.circular(20),\r\n                  child: const SizedBox(\r\n                    width: double.infinity,\r\n                    height: 112,\r\n                    child: Padding(\r\n                      padding:\r\n                          EdgeInsets.symmetric(horizontal: 20, vertical: 16),\r\n                      child: SizedBox(),\r\n                    ),\r\n                  ),\r\n                ),\r\n              ),\r\n            ),",
+    "contentType": "dart"
+  },
+  {
+    "created": "2022-06-02T14:10:54.865Z",
+    "name": "navDrawer",
+    "tags": ["dart"],
+    "content": "class NavDrawer extends StatelessWidget {\r\n  const NavDrawer({Key? key}) : super(key: key);\r\n\r\n  @override\r\n  Widget build(BuildContext context) {\r\n    return Drawer(\r\n      child: ListView(\r\n        padding: EdgeInsets.zero,\r\n        children: <Widget>[\r\n          const DrawerHeader(\r\n            decoration: BoxDecoration(\r\n                color: Colors.green,\r\n                image: DecorationImage(\r\n                    fit: BoxFit.fill,\r\n                    image: AssetImage(''))),\r\n            child: Text(\r\n              'Side menu',\r\n              style: TextStyle(color: Colors.white, fontSize: 25),\r\n            ),\r\n          ),\r\n          ListTile(\r\n            leading: const Icon(Icons.input),\r\n            title: const Text('Welcome'),\r\n            onTap: () => {},\r\n          ),\r\n          ListTile(\r\n            leading: const Icon(Icons.verified_user),\r\n            title: const Text('Profile'),\r\n            onTap: () => {Navigator.of(context).pop()},\r\n          ),\r\n          ListTile(\r\n            leading: const Icon(Icons.settings),\r\n            title: const Text('Settings'),\r\n            onTap: () => {Navigator.of(context).pop()},\r\n          ),\r\n          ListTile(\r\n            leading: const Icon(Icons.border_color),\r\n            title: const Text('Feedback'),\r\n            onTap: () => {Navigator.of(context).pop()},\r\n          ),\r\n          ListTile(\r\n            leading: const Icon(Icons.exit_to_app),\r\n            title: const Text('Logout'),\r\n            onTap: () => {Navigator.of(context).pop()},\r\n          ),\r\n        ],\r\n      ),\r\n    );\r\n  }\r\n}",
+    "contentType": "dart"
+  },
+  {
+    "created": "2022-06-03T08:37:09.040Z",
+    "name": "logger",
+    "tags": ["dart"],
+    "content": "import 'package:logger/logger.dart';\r\n\r\nfinal logger = Logger(\r\n    printer: PrettyPrinter(\r\n  methodCount: 0,\r\n  errorMethodCount: 5,\r\n  lineLength: 10000,\r\n  colors: true,\r\n  printEmojis: true,\r\n  printTime: true,\r\n));\r\n",
+    "contentType": "dart"
+  },
+  {
+    "created": "2022-06-11T09:51:49.759Z",
+    "name": "getfind",
+    "tags": ["dart"],
+    "content": "final xController = Get.find<>();",
+    "contentType": "dart"
+  },
+  {
+    "created": "2022-06-14T14:01:48.628Z",
+    "name": "getbottomsheet",
+    "tags": ["dart"],
+    "content": "Get.bottomSheet(\r\n                                  Column(\r\n                                    children: [\r\n                                      \r\n                                      const Center(\r\n                                        child: Text(\r\n                                          'Bottom Sheet',\r\n                                          style: TextStyle(fontSize: 18),\r\n                                        ),\r\n                                      ),\r\n                                      OutlinedButton(\r\n                                        onPressed: () {\r\n                                          Get.back();\r\n                                        },\r\n                                        child: const Text('Close'),\r\n                                      ),\r\n                                    ],\r\n                                  ),\r\n                                  backgroundColor: Colors.white,\r\n                                  elevation: 0,\r\n                                  shape: RoundedRectangleBorder(\r\n                                    borderRadius: BorderRadius.circular(10),\r\n                                  ),\r\n                                ),",
+    "contentType": "dart"
+  },
+  {
+    "created": "2022-06-14T14:37:00.664Z",
+    "name": "AlignAbletextInColumn",
+    "tags": ["dart"],
+    "content": "SizedBox(\r\n                                    width: double.infinity,\r\n                                    child: Container(\r\n                                      color: Colors.red,\r\n                                      child: const Text(\r\n                                        \"Should be left\",\r\n                                        textAlign: TextAlign.left,\r\n                                      ),\r\n                                    ),\r\n                                  ),",
+    "contentType": "dart"
+  },
+  {
+    "created": "2022-07-02T06:28:17.090Z",
+    "name": "dioservice",
+    "tags": ["dart"],
+    "content": "import 'dart:io';\r\n\r\nimport 'package:dio/dio.dart';\r\n\r\nimport '../utils/logger.dart';\r\n\r\nenum Method { POST, GET, PUT, DELETE, PATCH }\r\n\r\nconst BASE_URL = \"https://dummyapi.io/data/v1\";\r\n\r\nclass HttpService {\r\n  Dio? _dio;\r\n\r\n  static header() => {\r\n        \"Content-Type\": \"application/json\",\r\n        \"app-id\": \"62bfb7e30feae40b2c63ed65\"\r\n      };\r\n\r\n  String errorMessage = \"\";\r\n\r\n  Future<HttpService> init() async {\r\n    _dio = Dio(BaseOptions(\r\n      baseUrl: BASE_URL,\r\n      connectTimeout: 10000,\r\n      receiveTimeout: 15000,\r\n    ));\r\n    initInterceptors();\r\n    return this;\r\n  }\r\n\r\n  void initInterceptors() {\r\n    _dio!.interceptors.add(\r\n      InterceptorsWrapper(\r\n        onRequest: (requestOptions, handler) {\r\n          logger.i(\r\n              \"REQUEST[${requestOptions.method}] => PATH: ${requestOptions.path}\"\r\n              \"=> REQUEST VALUES: ${requestOptions.queryParameters} => HEADERS: ${requestOptions.headers}\");\r\n          return handler.next(requestOptions);\r\n        },\r\n        onResponse: (response, handler) {\r\n          logger\r\n              .i(\"RESPONSE[${response.statusCode}] => DATA: ${response.data}\");\r\n          return handler.next(response);\r\n        },\r\n        onError: (err, handler) {\r\n          if (err.response?.statusCode != null) {\r\n            logger.i(\"Error [${err.response?.statusCode}]\");\r\n            errorMessage = err.response?.data['error'];\r\n          } else {\r\n            logger.i(\"Error [${err.error}]\");\r\n            errorMessage = err.error.toString();\r\n          }\r\n\r\n          return handler.next(err);\r\n        },\r\n      ),\r\n    );\r\n  }\r\n\r\n  Future<dynamic> request(\r\n      {required String url,\r\n      required Method method,\r\n      Map<String, dynamic>? params}) async {\r\n    Response response;\r\n\r\n    try {\r\n      if (method == Method.POST) {\r\n        response = await _dio!.post(url, data: params);\r\n      } else if (method == Method.DELETE) {\r\n        response = await _dio!.delete(url);\r\n      } else if (method == Method.PATCH) {\r\n        response = await _dio!.patch(url);\r\n      } else {\r\n        response = await _dio!.get(url, queryParameters: params);\r\n      }\r\n\r\n      if (response.statusCode == 200) {\r\n        return response;\r\n      } else if (response.statusCode == 401) {\r\n        throw Exception(\"Unauthorized\");\r\n      } else if (response.statusCode == 500) {\r\n        throw Exception(\"Server Error\");\r\n      } else {\r\n        throw Exception(\"Something does wen't wrong\");\r\n      }\r\n    } on SocketException catch (e) {\r\n      logger.e(e);\r\n      throw Exception(\"No Internet Connection\");\r\n    } on FormatException catch (e) {\r\n      logger.e(e);\r\n      throw Exception(\"Bad response format\");\r\n    } on DioError catch (e) {\r\n      logger.e(e);\r\n      if (e.type == DioErrorType.connectTimeout) {\r\n        // ...\r\n        logger.i(\"CONNECTION TIMED OUT\");\r\n        throw Exception(\"CONNECTION TIMED OUT\");\r\n      }\r\n      if (e.type == DioErrorType.receiveTimeout) {\r\n        // ...\r\n        logger.i(\"RECEIVE TIME OUT\");\r\n        throw Exception(\"RECEIVE TIME OUT\");\r\n      }\r\n\r\n      throw Exception(e);\r\n    } catch (e) {\r\n      logger.e(e);\r\n      throw Exception(\"Something went wrong\");\r\n    }\r\n  }\r\n\r\n}\r\n",
+    "contentType": "dart"
+  },
+  {
+    "created": "2022-07-02T14:38:05.693Z",
+    "name": "shimmerview",
+    "tags": ["dart"],
+    "content": " Container(\r\n                          color: Colors.white,\r\n                          height: double.infinity,\r\n                          width: double.infinity,\r\n                          padding: const EdgeInsets.symmetric(\r\n                              horizontal: 16.0, vertical: 16.0),\r\n                          child: Column(\r\n                            mainAxisSize: MainAxisSize.max,\r\n                            children: <Widget>[\r\n                              Expanded(\r\n                                child: Shimmer.fromColors(\r\n                                  baseColor: Colors.grey,\r\n                                  highlightColor: Colors.white,\r\n                                  child: ListView.builder(\r\n                                    itemBuilder: (_, __) => Padding(\r\n                                      padding:\r\n                                          const EdgeInsets.only(bottom: 8.0),\r\n                                      child: Row(\r\n                                        crossAxisAlignment:\r\n                                            CrossAxisAlignment.start,\r\n                                        children: <Widget>[\r\n                                          Container(\r\n                                            width: 48.0,\r\n                                            height: 48.0,\r\n                                            color: Colors.white,\r\n                                          ),\r\n                                          const Padding(\r\n                                            padding: EdgeInsets.symmetric(\r\n                                                horizontal: 8.0),\r\n                                          ),\r\n                                          Expanded(\r\n                                            child: Column(\r\n                                              crossAxisAlignment:\r\n                                                  CrossAxisAlignment.start,\r\n                                              children: <Widget>[\r\n                                                Container(\r\n                                                  width: double.infinity,\r\n                                                  height: 8.0,\r\n                                                  color: Colors.white,\r\n                                                ),\r\n                                                const Padding(\r\n                                                  padding: EdgeInsets.symmetric(\r\n                                                      vertical: 2.0),\r\n                                                ),\r\n                                                Container(\r\n                                                  width: double.infinity,\r\n                                                  height: 8.0,\r\n                                                  color: Colors.white,\r\n                                                ),\r\n                                                const Padding(\r\n                                                  padding: EdgeInsets.symmetric(\r\n                                                      vertical: 2.0),\r\n                                                ),\r\n                                                Container(\r\n                                                  width: 40.0,\r\n                                                  height: 8.0,\r\n                                                  color: Colors.white,\r\n                                                ),\r\n                                              ],\r\n                                            ),\r\n                                          )\r\n                                        ],\r\n                                      ),\r\n                                    ),\r\n                                    itemCount: 20,\r\n                                  ),\r\n                                ),\r\n                              ),\r\n                            ],\r\n                          ),\r\n                        )\r\n                        ",
+    "contentType": "dart"
+  },
+  {
+    "created": "2022-07-03T09:08:00.063Z",
+    "name": "make",
+    "tags": ["makefile"],
+    "content": "run:\r\n\tpython server.py --config env/server.conf\r\n\r\nPHONY: run",
+    "contentType": "makefile"
+  },
+  {
+    "created": "2022-07-13T13:58:10.120Z",
+    "name": "listviewseperated",
+    "tags": ["dart"],
+    "content": "ListView.separated(\n              itemCount: controller.blogPostList.length,\n              itemBuilder: (BuildContext context, int index) {\n                return Text(controller.blogPostList[index].title.toString());\n              },\n              separatorBuilder: (BuildContext context, int index) =>\n                  Divider(height: 3, color: Colors.red),\n            )",
+    "contentType": "dart"
+  },
+  {
+    "created": "2022-07-15T09:24:36.086Z",
+    "name": "bwa_button1",
+    "tags": ["dart"],
+    "content": "Container(\n        height: 50,\n        width: double.infinity,\n        margin: EdgeInsets.only(top: 30),\n        child: TextButton(\n          onPressed: handleSignIn,\n          style: TextButton.styleFrom(\n            backgroundColor: primaryColor,\n            shape: RoundedRectangleBorder(\n              borderRadius: BorderRadius.circular(12),\n            ),\n          ),\n          child: Text(\n            'Sign In',\n            style: primaryTextStyle.copyWith(\n              fontSize: 16,\n              fontWeight: medium,\n            ),\n          ),\n        ),\n      );",
+    "contentType": "dart"
+  },
+  {
+    "created": "2022-07-20T13:57:17.339Z",
+    "name": "dashboard_bottom_nav",
+    "tags": ["dart"],
+    "content": " @override\n  Widget build(BuildContext context) {\n    return GetBuilder<DashboardController>(\n      \n      builder: (controller) {\n        return Scaffold(\n          body: SafeArea(\n            child:\n            controller.currentPage\n          ),\n          bottomNavigationBar: BottomNavigationBar(\n            unselectedItemColor: Colors.black,\n            onTap: controller.changePage,\n            currentIndex: controller.currentIndex.value,\n            showSelectedLabels: false,\n            showUnselectedLabels: false,\n            type: BottomNavigationBarType.fixed,\n            backgroundColor: Colors.white,\n            elevation: 0,\n            items: [\n              _bottomNavigationBarItem(\n                icon: CupertinoIcons.home,\n                label: 'Home',\n              ),\n              _bottomNavigationBarItem(\n                icon: CupertinoIcons.news,\n                label: 'Feed',\n              ),\n              _bottomNavigationBarItem(\n                icon: CupertinoIcons.heart,\n                label: 'Likes',\n              ),\n            ],\n          ),\n        );\n      },\n    );\n  }\n\n  _bottomNavigationBarItem({required IconData icon, required String label}) {\n    return BottomNavigationBarItem(\n      icon: Icon(icon),\n      label: label,\n    );\n  }",
+    "contentType": "dart"
+  },
+  {
+    "created": "2022-07-20T13:59:37.590Z",
+    "name": "dashboard_getx_controller",
+    "tags": ["dart"],
+    "content": " static DashboardController get to => Get.find();\n  var tabIndex = 0;\n\n  void changeTabIndex(int index) {\n    tabIndex = index;\n    update();\n  }\n\n  final currentIndex = 0.obs;\n\n  final pages = <Widget>[\n    HomeView(),\n    FeedView(),\n    LikesView(),\n  ];\n\n  Widget get currentPage => pages[currentIndex()];\n\n  changePage(int index) {\n    currentIndex.value = index;\n    update();\n  }",
+    "contentType": "dart"
+  },
+  {
+    "created": "2022-07-23T14:10:36.405Z",
+    "name": "searchbarwithlistview",
+    "tags": ["dart"],
+    "content": "Column(\n        children: [\n          TextField(\n            // controller: controller.searchController,\n            style: TextStyle(color: Colors.black, fontSize: 15),\n            decoration: InputDecoration(\n                fillColor: Colors.white,\n                filled: true,\n                border: OutlineInputBorder(\n                  borderRadius: BorderRadius.circular(10),\n                  borderSide: BorderSide.none,\n                ),\n                hintText: 'Search a blog post',\n                hintStyle: TextStyle(color: const Color(0xff6F7075)),\n                prefixIcon: const Icon(\n                  Icons.search,\n                  color: Color(0xff6F7075),\n                )),\n            // onChanged:(_) => controller.searchPost(controller.searchController.text),\n          ),\n          Expanded(\n            child: ListView.separated(\n              // itemCount: controller.blogPostList.length,\n              itemCount: 10,\n              itemBuilder: (BuildContext context, int index) {\n                // final post = controller.blogPostList[index];\n\n                return InkWell(\n                  // onTap: () => Get.toNamed(Routes.DETAIL_POST,arguments: post),\n                  child: Container(\n                      padding:\n                          EdgeInsets.symmetric(vertical: 10, horizontal: 5),\n                      child: \n                      // Text(post.title.toString())\n                      Text(\"tes\")\n                      \n                      ),\n                );\n              },\n              separatorBuilder: (BuildContext context, int index) =>\n                  Divider(height: 3, color: Colors.grey),\n            ),\n          ),\n        ],\n      )",
+    "contentType": "dart"
+  },
+  {
+    "created": "2022-08-05T00:20:18.363Z",
+    "name": "roundedTextButtonNew",
+    "tags": ["dart"],
+    "content": "SizedBox(\n              width: 141,\n              height: 47,\n              child: TextButton(\n                onPressed: () {},\n                style: TextButton.styleFrom(\n                    backgroundColor: primary,\n                    shape: RoundedRectangleBorder(\n                        borderRadius: BorderRadius.circular(10))),\n                child: const Text(\n                  \"Get Started\",\n                  style: TextStyle(color: Colors.white),\n                ),\n              ),\n            ),",
+    "contentType": "dart"
+  },
+  {
+    "created": "2022-08-05T09:18:05.691Z",
+    "name": "roundedContainer",
+    "tags": ["dart"],
+    "content": "Container(\n        decoration = BoxDecoration(\n          color: backgroundColor,\n          borderRadius: const BorderRadius.all(Radius.circular(10)),\n        ),\n        child = ,)",
+    "contentType": "dart"
+  },
+  {
+    "created": "2022-08-05T09:57:06.712Z",
+    "name": "boxDecoration",
+    "tags": ["dart"],
+    "content": "decoration: const BoxDecoration(\n        color: Colors.red,\n        // borderRadius: BorderRadius.all(Radius.circular(10)),\n      ),",
+    "contentType": "dart"
+  },
+  {
+    "created": "2022-09-02T09:48:31.214Z",
+    "name": "timestampfunction",
+    "tags": ["dart"],
+    "content": "timestampNow() {\n  int timestampNow = DateTime.now().millisecondsSinceEpoch;\n\n  return timestampNow;\n}",
+    "contentType": "dart"
+  },
+  {
+    "created": "2022-09-07T10:04:31.397Z",
+    "name": "firebaseOptionsTemplate",
+    "tags": ["dart, firebase"],
+    "content": "// File generated by FlutterFire CLI.\n// ignore_for_file: lines_longer_than_80_chars, avoid_classes_with_only_static_members\nimport 'package:firebase_core/firebase_core.dart' show FirebaseOptions;\nimport 'package:flutter/foundation.dart'\n    show defaultTargetPlatform, kIsWeb, TargetPlatform;\n\n/// Default [FirebaseOptions] for use with your Firebase apps.\n///\n/// Example:\n/// ```dart\n/// import 'main_dev.dart';\n/// // ...\n/// await Firebase.initializeApp(\n///   options: DefaultFirebaseOptions.currentPlatform,\n/// );\n/// ```\nclass DefaultFirebaseOptions {\n  static FirebaseOptions get currentPlatform {\n    if (kIsWeb) {\n      throw UnsupportedError(\n        'DefaultFirebaseOptions have not been configured for web - '\n        'you can reconfigure this by running the FlutterFire CLI again.',\n      );\n    }\n    switch (defaultTargetPlatform) {\n      case TargetPlatform.android:\n        return android;\n      case TargetPlatform.iOS:\n        return ios;\n      case TargetPlatform.macOS:\n        throw UnsupportedError(\n          'DefaultFirebaseOptions have not been configured for macos - '\n          'you can reconfigure this by running the FlutterFire CLI again.',\n        );\n      case TargetPlatform.windows:\n        throw UnsupportedError(\n          'DefaultFirebaseOptions have not been configured for windows - '\n          'you can reconfigure this by running the FlutterFire CLI again.',\n        );\n      case TargetPlatform.linux:\n        throw UnsupportedError(\n          'DefaultFirebaseOptions have not been configured for linux - '\n          'you can reconfigure this by running the FlutterFire CLI again.',\n        );\n      default:\n        throw UnsupportedError(\n          'DefaultFirebaseOptions are not supported for this platform.',\n        );\n    }\n  }\n\n  static const FirebaseOptions android = FirebaseOptions(\n    apiKey: 'AIzaSyCmuIM9YKkZJy6uyAMJENDLfmw-7_cHFic',\n    appId: '1:928654461237:android:49695e00566ab05f69647c',\n    messagingSenderId: '928654461237',\n    projectId: 'api-project-928654461237',\n    databaseURL:\n        'https://api-project-928654461237-default-rtdb.asia-southeast1.firebasedatabase.app',\n    storageBucket: 'api-project-928654461237.appspot.com',\n  );\n\n  static const FirebaseOptions ios = FirebaseOptions(\n    apiKey: 'AIzaSyABwaGWrSpQMF_gtzOSCmCyzyahxtJRR5w',\n    appId: '1:928654461237:ios:d263b5384824a80669647c',\n    messagingSenderId: '928654461237',\n    projectId: 'api-project-928654461237',\n    storageBucket: 'api-project-928654461237.appspot.com',\n    iosClientId:\n        '928654461237-bs7vdd39omkn0i6a6smidshl1uutun4b.apps.googleusercontent.com',\n    iosBundleId: 'id.aruna.salesapp.development',\n  );\n}",
+    "contentType": "dart"
+  },
+  {
+    "created": "2022-09-08T08:50:38.278Z",
+    "name": "inputField",
+    "tags": ["dart"],
+    "content": "class InputField extends StatelessWidget {\n  const InputField(\n      {Key? key,\n      required this.onChanged,\n      required this.textController,\n      required this.errorMsg,\n      required this.hintText,\n      this.obscureText = false,\n      this.prefixIcon,\n      this.suffixIcon})\n      : super(key: key);\n\n  final Function(String) onChanged;\n  final TextEditingController textController;\n  final String? errorMsg;\n  final String? hintText;\n  final bool obscureText;\n  final Widget? prefixIcon;\n  final Widget? suffixIcon;\n\n  @override\n  Widget build(BuildContext context) {\n    return Container(\n      margin: const EdgeInsets.only(bottom: 20),\n      child: TextFormField(\n        obscureText: obscureText,\n        onChanged: onChanged,\n        controller: textController,\n        cursorColor: Colors.black12,\n        decoration: InputDecoration(\n          filled: true,\n          fillColor: Colors.white,\n          focusColor: Colors.blue,\n          hoverColor: Colors.blue,\n          errorBorder: OutlineInputBorder(\n            borderRadius: BorderRadius.circular(10),\n            borderSide: const BorderSide(\n              color: Colors.red,\n            ),\n          ),\n          border: OutlineInputBorder(\n            borderRadius: BorderRadius.circular(10),\n            borderSide: const BorderSide(\n              color: Colors.blue,\n            ),\n          ),\n          focusedBorder: OutlineInputBorder(\n            borderRadius: BorderRadius.circular(10),\n            borderSide: const BorderSide(\n              color: Colors.blue,\n            ),\n          ),\n          enabledBorder: OutlineInputBorder(\n            borderRadius: BorderRadius.circular(10),\n            borderSide: const BorderSide(\n              color: Colors.black12,\n              width: 2.0,\n            ),\n          ),\n          prefixIcon: prefixIcon,\n          errorText: errorMsg,\n          hintText: hintText,\n          suffixIcon: suffixIcon,\n        ),\n      ),\n    );\n  }\n}",
+    "contentType": "dart"
+  },
+  {
+    "created": "2022-09-08T08:57:28.084Z",
+    "name": "signInFormController",
+    "tags": ["dart, getx"],
+    "content": " final emailController = TextEditingController();\n  final passwordController = TextEditingController();\n  RxString email = RxString('');\n  RxString password = RxString('');\n  RxnString emailErrorText = RxnString(null);\n  RxnString passwordErrorText = RxnString(null);\n  final _okToSubmit = false.obs;\n  bool emailOk = false;\n  bool passOk = false;\n\n  RxBool get okToSubmit {\n    if (emailOk && passOk) {\n      _okToSubmit.value = true;\n    } else {\n      _okToSubmit.value = false;\n    }\n    return _okToSubmit;\n  }\n\n  void emailChanged(String val) {\n    email.value = val;\n\n    String pattern =\n        r\"^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]\"\n        r\"{0,253}[a-zA-Z0-9])?(?:\\.[a-zA-Z0-9](?:[a-zA-Z0-9-]\"\n        r\"{0,253}[a-zA-Z0-9])?)*$\";\n    RegExp regex = RegExp(pattern);\n    if (email.value.isEmpty) {\n      emailOk = false;\n      emailErrorText.value = \"Kolom harus diisi\";\n    } else {\n      if (!regex.hasMatch(email.value)) {\n        emailOk = false;\n        emailErrorText.value = \"Alamat email tidak valid\";\n      } else {\n        emailOk = true;\n        emailErrorText.value = null;\n      }\n    }\n  }\n\n  void passwordChanged(String val) {\n    password.value = val;\n\n    if (password.value.isEmpty) {\n      passOk = false;\n      passwordErrorText.value = \"Kolom harus diisi\";\n    } else {\n      passOk = true;\n      passwordErrorText.value = null;\n    }\n  }\n\n  @override\n  void onClose() {\n    super.onClose();\n    emailController.dispose();\n    passwordController.dispose();\n  }",
+    "contentType": "dart"
+  },
+  {
+    "created": "2022-09-19T10:21:45.223Z",
+    "name": "runconfig",
+    "tags": ["config-file"],
+    "content": "  {\n      \"request\": \"launch\",\n      \"name\": \"development\",\n      \"flutterMode\": \"debug\",\n      \"program\": \"lib/environments/main_dev.dart\",\n      \"type\": \"dart\",\n      \"args\": [\"--flavor\", \"development\"]\n    }",
+    "contentType": "jsonc"
+  },
+  {
+    "created": "2022-10-12T14:00:26.033Z",
+    "name": "flutter icon",
+    "tags": ["yaml"],
+    "content": "flutter_icons:\n  android: \"launcher_icon\"\n  ios: false\n  image_path: \"assets/images/icon-production.png\"\n  min_sdk_android: 23 # android min sdk min:16, default 21",
+    "contentType": "yaml"
+  },
+  {
+    "created": "2022-10-13T08:27:09.918Z",
+    "name": "add depedency",
+    "tags": ["yaml"],
+    "content": "  package:\n    git:\n      url: git@github.com:munificent/kittens.git\n      ref: some-branch\n",
+    "contentType": "yaml"
+  },
+  {
+    "created": "2022-10-14T07:43:06.165Z",
+    "name": "add flavors android",
+    "tags": ["gradle"],
+    "content": "flavorDimensions \"app\"\n    productFlavors {\n        development {\n            dimension \"app\"\n            applicationId \"id.aruna.salesapp.development\"\n            versionCode 1\n            versionName \"1.0.1\"\n        }\n        staging {\n            dimension \"app\"\n            applicationId \"id.aruna.salesapp.staging\"\n            versionCode 1\n            versionName \"1.0.1\"\n        }\n        production { \n            dimension \"app\"\n            applicationId \"id.aruna.salesapp\"\n            versionCode 1\n            versionName \"1.0.1\"\n        }\n    }",
+    "contentType": "gradle"
+  },
+  {
+    "created": "2022-10-18T08:39:46.815Z",
+    "name": "named route access provider",
+    "tags": ["dart"],
+    "content": "routes: {\n          '/': (context) => ChangeNotifierProvider.value(\n                value: _counter,\n                child: MyHomePage(),\n              ),\n          '/counter': (context) => ChangeNotifierProvider.value(\n                value: _counter,\n                child: ShowMeCounter(),\n              ),\n        },",
+    "contentType": "dart"
+  },
+  {
+    "created": "2022-10-18T08:40:25.508Z",
+    "name": "generated route access provider",
+    "tags": ["dart"],
+    "content": " onGenerateRoute: (RouteSettings settings) {\n          switch (settings.name) {\n            case '/':\n              return MaterialPageRoute(\n                builder: (context) => ChangeNotifierProvider.value(\n                  value: _counter,\n                  child: MyHomePage(),\n                ),\n              );\n            case '/counter':\n              return MaterialPageRoute(\n                builder: (context) => ChangeNotifierProvider.value(\n                  value: _counter,\n                  child: ShowMeCounter(),\n                ),\n              );\n            default:\n              return null;\n          }\n        }",
+    "contentType": "dart"
+  },
+  {
+    "created": "2022-11-08T04:12:09.582Z",
+    "name": "android flutter sdk properties",
+    "tags": ["gradle"],
+    "content": "flutter.minSdkVersion=20\nflutter.targetSdkVersion=30\nflutter.compileSdkVersion=30",
+    "contentType": "properties"
+  },
+  {
+    "created": "2022-11-08T04:14:31.025Z",
+    "name": "get local properties",
+    "tags": ["gradle"],
+    "content": "localProperties.getProperty('flutter.minSdkVersion').toInteger()",
+    "contentType": "gradle"
+  },
+  {
+    "created": "2022-11-18T07:39:47.675Z",
+    "name": "insertContainerBorder",
+    "tags": ["dart"],
+    "content": "border: Border.all(color: Colors.red,width: 5)",
+    "contentType": "dart"
+  },
+  {
+    "created": "2022-11-28T04:40:57.519Z",
+    "name": "decorationBoxShadow",
+    "tags": ["flutter"],
+    "content": " boxShadow: [\n                        BoxShadow(\n                          offset: Offset(0, 2),\n                          blurRadius: 4\n                        ),\n                      ],",
+    "contentType": "dart"
+  },
+  {
+    "created": "2022-11-28T07:05:23.977Z",
+    "name": "insertListviewBuilderWithExpanded",
+    "tags": ["flutter"],
+    "content": " Expanded(\n              child: ListView.builder(\n                itemCount: 10,\n                itemBuilder: (_, index) {\n                  return Container();\n                },\n              ),\n            )",
+    "contentType": "dart"
+  },
+  {
+    "created": "2022-11-28T07:42:23.903Z",
+    "name": "navPush",
+    "tags": ["flutter"],
+    "content": "Navigator.push(\n                            _,\n                            MaterialPageRoute(\n                                builder: (_) => const NewsViewPage()),\n                          )",
+    "contentType": "dart"
+  },
+  {
+    "created": "2022-11-30T08:03:14.624Z",
+    "name": "launchConfigAll",
+    "tags": ["json"],
+    "content": " {\n      \"request\": \"launch\",\n      \"name\": \"development\",\n      \"flutterMode\": \"debug\",\n      \"program\": \"lib/main_dev.dart\",\n      \"type\": \"dart\",\n      \"args\": [\"--flavor\", \"dev\"]\n    },\n    {\n      \"request\": \"launch\",\n      \"name\": \"staging\",\n      \"flutterMode\": \"debug\",\n      \"program\": \"lib/main_stag.dart\",\n      \"type\": \"dart\",\n      \"args\": [\"--flavor\", \"stag\"]\n    },\n    {\n      \"request\": \"launch\",\n      \"name\": \"production\",\n      \"flutterMode\": \"debug\",\n      \"program\": \"lib/main_prod.dart\",\n      \"type\": \"dart\",\n      \"args\": [\"--flavor\", \"prod\"]\n    }",
+    "contentType": "jsonc"
+  },
+  {
+    "created": "2022-12-14T09:23:33.408Z",
+    "name": "page",
+    "tags": ["dart"],
+    "content": "import 'package:flutter/material.dart';\n\nclass MyWidget extends StatelessWidget {\n  const MyWidget({super.key});\n\n  @override\n  Widget build(BuildContext context) {\n    return Scaffold(\n      appBar: AppBar(\n        title: const Text('Second Splash'),\n      ),\n      body: const Center(\n        child: Text('Second Splash'),\n      ),\n    );\n  }\n}\n",
+    "contentType": "dart"
+  }
+]
